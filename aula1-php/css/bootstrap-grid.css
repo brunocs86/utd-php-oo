@@ -1910,3 +1910,50 @@ html {
   }
 }
 /*# sourceMappingURL=bootstrap-grid.css.map */
+
+.item1 {
+  background: LightSkyBlue;
+  grid-area: header;
+}
+
+.item2 {
+  background: LightSalmon;
+  grid-area: advert;
+}
+
+.item3 {
+  background: PaleTurquoise;
+  grid-area: content;
+  /* enter your code below this line */
+  grid-template-columns: auto, 1fr;
+  display: grid;
+
+  /* enter your code above this line */
+}
+
+.item4 {
+  background: lightpink;
+  grid-area: footer;
+}
+
+.itemOne {
+  background: PaleGreen;
+}
+
+.itemTwo {
+  background: BlanchedAlmond;
+}
+
+.container2 {
+  font-size: 1.5em;
+  min-height: 300px;
+  width: 100%;
+  background: LightGray;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-gap: 10px;
+  grid-template-areas:
+          "advert content"
+          "advert content"
+}
