@@ -2,110 +2,342 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Aula Bootstrap - Pagination</title>
+    <meta name="viewport" content="width=device-width, initial-scale-1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Aula Bootstrap - Web Page</title>
+
+    <!-- Font Awesome -->
+    <link href="css\font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.min.css" rel="stylesheet">
+
 </head>
 
 <body>
 
 <!-- Menu -->
+<header>
 
-<nav class="navbar navbar-expand-md fixed-top navbar-light bg-primary">
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg scrolling-navbar navbar-light bg-primary">
+        <div class="container">
 
-    <a class="navbar-brand text-capitalize text-light" href="#">MDB</a>
+            <a class="navbar-brand waves-effect" target="_blank" href="http://www.brmy.tk">
+                <strong class="text-capitalize text-light">brMY!</strong>
+            </a>
+            <!-- Collapse -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <div class="dropdown">
-        <button class="btn btn-outline-light dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Home
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-            <button class="dropdown-item" type="button">Nossa Empresa</button>
-            <button class="dropdown-item" type="button">Sobre nós</button>
-            <button class="dropdown-item" type="button">Entre em contato</button>
-        </div>
-    </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-            </li>
-        </ul>
-        <form class="form-inline mt-2 mt-md-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-        </form>
-    </div>
-</nav>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="btn btn-outline-light dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <strong>Home</strong>
+                            </button>
+                            <div class="dropdown-menu bg-primary" aria-labelledby="dropdownMenu2">
+                                <button class="dropdown-item text-light btn-block" type="button">Nossa Empresa</button>
+                                <button class="dropdown-item text-light" type="button">Sobre nós</button>
+                                <button class="dropdown-item text-light" type="button">Contato</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
 
-<div class="container">
-    <div class="carousel-inner">
-        <div class="item active">
-            <img class="img-responsive" src="http://placehold.it/1080x500" alt="">
-            <p>QUERO ESSE TEXTO SOBRE ESSA IMAGEM DE CIMA</p>
-        </div>
-    </div>
-</div>
+                <ul class="navbar-nav nav-flex-icons">
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <form class="form-inline">
+                            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-light" type="submit">
+                                <i class="fa fa-search mr-3"></i>Search
+                            </button>
+                        </form>
+                    </div>
+                </ul>
 
-<div class="container">
-
-    <div class="row">
-
-        <div class="col-4">
-            <div class="card">
-                <img class="card-img-top" src="https://thumbs.dreamstime.com/x/uma-imagem-do-conceito-das-altera%C3%A7%C3%B5es-clim%C3%A1ticas-grama-verde-da-paisagem-e-terra-da-seca-50990297.jpg">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
             </div>
         </div>
+    </nav>
+</header>
 
-        <div class="col-4">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
+<main class="mt-5 pt-5 mb-5 pb-5">
 
-        <div class="col-4">
-            <div class="card">
-                <div class="card-header">
-                    Featured
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
+    <div class="container">
+        <!--<div class="carousel-inner">
+            <div class="item active">
+                <img class="img-responsive" src="http://placehold.it/1080x500" alt="">
+                <p>QUERO ESSE TEXTO SOBRE ESSA IMAGEM DE CIMA</p>
             </div>
-        </div>
+        </div>-->
+
+        <!--Section: Jumbotron-->
+        <section class="card wow fadeIn" style="background-image: url(img/image.jpg);">
+
+            <!-- Content -->
+            <div class="card-body text-white text-center py-5 px-5 my-4">
+
+                <h1 class="mb-4">
+                    <strong>League Of Draven</strong>
+                </h1>
+                <p>
+                    <strong>Participe do nosso bootcamp e torne-se um High elo ainda nesta Season</strong>
+                </p>
+                <p class="mb-5">
+                    <strong> Com nosso treinamento intesivo que inclui estratégias de rotas, gameplay avançado, macro e micro game você melhorará
+                        suas mecânicas ao ponto de ter nível competivo CBLOL.
+                    </strong>
+                </p>
+                <a target="_blank" href="#" class="btn btn-outline-white btn-lg">
+                    GO BootCamp <i class="fa fa-graduation-cap ml-2"></i>
+                </a>
+
+            </div>
+            <!-- Content -->
+        </section>
+
+        <hr class="my-5">
+
+        <section class="text-center">
+
+            <div class="row mb-4 wow fadeIn">
+
+                <div class="col-lg-4 col-md-12 mb-4">
+
+                    <div class="card">
+
+                        <div class="view overlay">
+                            <div class="embed-responsive embed-responsive-16by9 rounded-top">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ZIqWgNvafoY" allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-title">Lorem Ipsum</h4>
+                            <p class="card-text">
+                                League of Ipsum dolor sit amet ADC roam 1v1 wave League of Legends masteries harass dodge ARAM wave
+                                League of wow escape reset instalock solo queue. Elixir golems wraiths red buff doran's counter jungle red buff DC CC DC.
+                            </p>
+                            <p class="card-text">
+                                <strong>Warding assist global fountain backdoor glass cannon Draven creeps trade creeps.</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+
+                    <div class="card">
+
+                        <div class="view overlay">
+                            <img src="img/league-legends-670x335.jpg" class="card-img-top" alt="">
+                            <a href="#" target="_blank">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">League of Ipsum</h5>
+                            <p class="card-text">
+                                Poke baron rito pls split push KS skillshot wards double buffs ultimate golems sustain
+                                solo queue League of Legends reset blink KS dragon minions backdoor utility.
+                                Donec erat dolor, ultrices in turpis vel, volutpat commodo est. Fusce molestie, turpis et pharetra fermentum.
+                            </p>
+                            <a href="#" class="btn btn-primary">invite</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+
+                    <div class="card">
+
+                        <div class="view overlay">
+                            <img src="img/loldesafiante.jpg" class="card-img-top" alt="">
+                            <a href="#" target="_blank">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Elo hell DC</h5>
+                            <p class="card-text">
+                                Queue report red buff harass AFK hue pentakill proc inhib wave reset ragequit counter gank
+                                nerf #jukes4jesus. Minions CC fountain fountain feed assist doran's flash so fountain ragequit
+                                warding proc League of Legends AFK counter jungle. Lane jukes leash push queue gap closer proc ADC
+                                skins push harass top banana skillshot.
+                            </p>
+                            <a href="#" class="btn btn-primary">Enjoy</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!--Grid row-->
+            <div class="row mb-4 wow fadeIn">
+
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-12 mb-4">
+
+                    <!--Card-->
+                    <div class="card">
+
+                        <!--Card video-->
+                        <div class="view overlay">
+                            <div class="embed-responsive embed-responsive-16by9 rounded-top">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vzHrjOMfHPY" allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+
+                        <!--Card content-->
+                        <div class="card-body">
+                            <!--Title-->
+                            <h4 class="card-title">A New Dawn | Cinematic - League of Legends</h4>
+                            <!--Text-->
+                            <p class="card-text">Bait chase instakill counter gank </p>
+                            <a href="#" target="_blank" class="btn btn-primary btn-md">download game
+                                <i class="fa fa-download ml-2"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                    <!--/.Card-->
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4">
+
+                    <!--Card-->
+                    <div class="card">
+
+                        <!--Card image-->
+                        <div class="view overlay">
+                            <img src="img/maxresdefault.jpg" class="card-img-top" alt="">
+                            <a href="https://mdbootstrap.com/react/" target="_blank">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <!--Card content-->
+                        <div class="card-body">
+                            <!--Title-->
+                            <h4 class="card-title">Fields of Justice</h4>
+                            <!--Text-->
+                            <p class="card-text">
+                                Blue buff banana Elo hell face check bork peeling ADC overstaying bait dodge burst League
+                                of Legends.
+                            </p>
+                            <a href="https://mdbootstrap.com/react/" target="_blank" class="btn btn-primary btn-md">
+                                Free Tutorial
+                                <i class="fa fa-download ml-2"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                    <!--/.Card-->
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4">
+
+                    <!--Card-->
+                    <div class="card">
+
+                        <!--Card image-->
+                        <div class="view overlay">
+                            <img src="img/HowlingAbyss_SS144.jpg" class="card-img-top" alt="">
+                            <a href="#" target="_blank">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <!--Card content-->
+                        <div class="card-body">
+                            <!--Title-->
+                            <h4 class="card-title">ARAM Map</h4>
+                            <!--Text-->
+                            <p class="card-text">
+                                Draven bork quadra doran's penta dodge 1v1 counter CC bruiser harass CC.
+                            </p>
+                            <a href="#" target="_blank" class="btn btn-primary btn-md">start now
+                                <i class="fa fa-download ml-2"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                    <!--/.Card-->
+
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+
+            <!--Pagination-->
+            <nav class="d-flex justify-content-center wow fadeIn">
+                <ul class="pagination pagination-circle pg-blue">
+
+                    <!--Arrow left-->
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                    </li>
+
+                    <li class="page-item active">
+                        <a class="page-link" href="#">1
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">4</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">5</a>
+                    </li>
+
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!--Pagination-->
+
+        </section>
     </div>
-    <hr>
-    <div class="row">
-        <div class="col-4">
-            <div class="card">
-                <div class="card-header">
-                    Clique no link para aula sobre Navs
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Verificar como funciona o elemento Navs.</p>
-                    <a href="navs.html" class="btn btn-primary">Navs</a>
-                </div>
-            </div>
-        </div>
-    </div>
+</main>
 
-</div>
 
 <!-- Footer -->
 <nav class="container">
     <nav class="navbar fixed-bottom navbar-expand-md navbar-light bg-primary">
-        <a class="navbar-brand text-light"  href="#">&copy; 2018 - Todos os direitos reservados</a>
+        <a class="navbar-brand text-light" href="#">&copy; 2018 - Todos os direitos reservados</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -113,7 +345,18 @@
 </nav>
 
 </body>
-<script src="js/jquery331.js"></script>
-<script src="js/popper.js"></script>
-<script src="js/bootstrap.js"></script>
+<!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery331.js"></script>
+    <!-- Popper -->
+    <script type="text/javascript" src="js/popper.js"></script>
+    <!-- Bootstrap -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Initializations -->
+    <script type="text/javascript">
+        // Animations initialization
+        new WOW().init();
+    </script>
 </html>
