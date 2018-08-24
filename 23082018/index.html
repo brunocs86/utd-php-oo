@@ -13,7 +13,7 @@
     <!-- Material Design Bootstrap -->
     <link href="css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
 </head>
 
@@ -40,13 +40,13 @@
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
                         <div class="dropdown">
-                            <button class="btn btn-outline-light dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button class="btn btn-outline-light dropdown-toggle btn-sm" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <strong>Home</strong>
                             </button>
                             <div class="dropdown-menu bg-primary" aria-labelledby="dropdownMenu2">
-                                <button class="dropdown-item text-light btn-block" type="button">Nossa Empresa</button>
-                                <button class="dropdown-item text-light" type="button">Sobre nós</button>
-                                <button class="dropdown-item text-light" type="button">Contato</button>
+                                <button class="dropdown-item text-light bg-primary" type="button">Nossa Empresa</button>
+                                <button class="dropdown-item text-light bg-primary" type="button">Sobre nós</button>
+                                <button class="dropdown-item text-light bg-primary" type="button">Contato</button>
                             </div>
                         </div>
                     </li>
@@ -56,7 +56,7 @@
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <form class="form-inline">
                             <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-light" type="submit">
+                            <button class="btn btn-outline-light btn-sm" type="submit">
                                 <i class="fa fa-search mr-3"></i>
                                 <strong>Search</strong>
                             </button>
@@ -72,10 +72,14 @@
 <!-- Form-->
     <section class="mt-5 pt-5 mb-5 pb-5">
         <div class="container mt-3">
+            <div class="row">
 
+                <div class="col-3">
 
-                <div class="card">
+                </div>
 
+                <div class="col-6">
+                    <div class="card">
                         <h5 class="card-header primary-color white-text text-center py-4">
                             <strong>Sing in</strong>
                         </h5>
@@ -89,7 +93,7 @@
                                 </div>
 
                                 <div class="md-form">
-                                    <input type="password" id="materialLoginFormPassword" class="form-control">
+                                    <input type="password" id="materialLoginFormPassword" class="form-control" aria-label="Password">
                                     <label for="materialLoginFormPassword">Password</label>
                                 </div>
 
@@ -103,9 +107,23 @@
                                 </div>
                             </form>
                         </div>
+                    </div>
                 </div>
+
+                <div class="col-3">
+
+                </div>
+
+            </div>
         </div>
     </section>
+
+<!--<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+  </div>
+</div>-->
 
 <!-- Footer -->
 <nav class="container">
@@ -134,7 +152,5 @@
     </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-
-http://opensource.locaweb.com.br/locawebstyle/documentacao/formularios/exibir-senha/
 
 </html>
