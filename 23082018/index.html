@@ -85,7 +85,7 @@
                         </h5>
 
                         <div class="card-body px-lg-5 pt-0">
-                            <form class="text-center" style="color:#757575;">
+                            <form class="text-center was-validated" style="color:#757575;">
 
                                 <div class="md-form">
                                     <input type="email" id="materialLoginFormEmail" class="form-control">
@@ -101,9 +101,10 @@
                                     Sign in<i class="fa fa-sign-in ml-3"></i>
                                 </button>
 
-                                <div class="form-group form-check text-left">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">Lembrar</label>
+                                <div class="custom-control custom-checkbox text-left mb-3">
+                                    <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+                                    <label class="custom-control-label" for="customControlValidation1">Lembrar-me</label>
+                                    <div class="invalid-feedback">Example invalid feedback text</div>
                                 </div>
                             </form>
                         </div>
