@@ -206,7 +206,7 @@
                                                     valores. Eles podem ser classificados ainda como: Numérico, associativo e multidimensional</p>
 
                                             </div>
-                                            <div class="card-body">
+                                            <div class="card-body m-1">
 
                                                 <div class="row pb-2">
                                                     <div class="col-xl-4 col-md-6">
@@ -274,12 +274,14 @@
                                                             <dd class="col-sm-12">
                                                                 <a class="btn btn-outline-success text-left" href="#">
                                                                     &lt;?php <br>
-                                                                    $salaries = array("mohammad" => 2000,<br>
-                                                                    "qadir" => 1000, "zara" => 500);<br>
+                                                                    $salaries = array(<br>
+                                                                    "mohammad" => 2000,<br>
+                                                                    "qadir" => 1000,<br>
+                                                                    "zara" => 500);<br>
                                                                     ?><br>
                                                                 </a><br>
                                                                 <p>Resultado: </p>
-                                                                <a class="btn btn-outline-success text-left" href="#">
+                                                                <a class="btn btn-outline-success  text-sm-left text-left" href="#">
                                                                     <?php
                                                                         $salaries = array("mohammad" => 2000, "qadir" => 1000, "zara" => 500);
 
@@ -490,53 +492,85 @@
                                     <div class="col-xl-12 col-md-6 pt-3">
                                         <div class="card">
                                             <div class="card-header">
-                                                <h2>Resorce</h2>
-                                                <p>São variáveis que quando acompanhadas de parênteses execultam uma determinada função </p>
+                                                <h2>Resource</h2>
+                                                <p>São variáveis especiais que referencial recursos externos ao PHP.</p>
 
                                             </div>
                                             <div class="card-body">
 
                                                 <div class="alert alert-secondary">
-                                                    Se um nome de variável tem parênteses no final dela, o PHP procurará uma função com o
-                                                    mesmo nome e tentará executá-la.
+                                                    Segue abaixo variável do tipo resource que configura a conexão com o banco de dados
                                                 </div>
 
                                                 <div class="alert alert-success justify-content-center">
                                                     <p>Ex¹:</p><br>
                                                     <a class="btn btn-outline-success text-left" href="#">
                                                         &lt;?php<br>
-                                                        function foo() {<br>
-                                                        echo "Chamou foo()<br>\n";<br>
-                                                        }<br>
-                                                        $func = 'foo';<br>
-                                                        $func();<br>
+                                                            $db['default'] = array(<br>
+                                                            'dsn'	=> '',
+                                                            'hostname' => 'localhost',<br>
+                                                            'username' => '',<br>
+                                                            'password' => '',<br>
+                                                            'database' => '',<br>
+                                                            'dbdriver' => 'mysqli',<br>
+                                                            'dbprefix' => '',<br>
+                                                            'pconnect' => FALSE,<br>
+                                                            'db_debug' => (ENVIRONMENT !== 'production'),<br>
+                                                            'cache_on' => FALSE,<br>
+                                                            'cachedir' => '',<br>
+                                                            'char_set' => 'utf8',<br>
+                                                            'dbcollat' => 'utf8_general_ci',<br>
+                                                            'swap_pre' => '',<br>
+                                                            'encrypt' => FALSE,<br>
+                                                            'compress' => FALSE,<br>
+                                                            'stricton' => FALSE,<br>
+                                                            'failover' => array(),<br>
+                                                            'save_queries' => TRUE<br>
+                                                            );
                                                         ?><br>
-                                                    </a>
-                                                    <p>Resultado: </p>
-                                                    <a class="btn btn-outline-success text-left" href="#">
-                                                        <?php
-                                                        function fooo()
-                                                        {
-                                                            echo "Chamou foo()";
-                                                        }
-                                                        ?>
-                                                        <?php
-                                                        $func = 'foo';
-                                                        $func();
-                                                        ?>
-                                                        <br>
                                                     </a>
                                                 </div>
                                                 <footer class="bg-secondary card-footer">
                                                     <p class="font-italic">¹ Este é apenas um exemplo das diversas formas
-                                                        de se criar uma variável resorce.
+                                                        de se criar uma variável resource.
+                                                    </p>
+                                                </footer>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="tab-pane fade" id="nav-null" role="tabpanel" aria-labelledby="nav-null-tab">
+                                    <div class="col-xl-12 col-md-6 pt-3">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h2>Null</h2>
+                                                <p>É uma variável especial que tem armazenado o valor NULL.</p>
+
+                                            </div>
+                                            <div class="card-body">
+
+                                                <div class="alert alert-secondary">
+                                                    Segue abaixo variável do tipo NULL.
+                                                </div>
+
+                                                <div class="alert alert-success justify-content-center">
+                                                    <p>Ex¹:</p><br>
+                                                    <a class="btn btn-outline-success text-left" href="#">
+                                                        &lt;?php<br>
+                                                         $my_var = NULL;
+                                                        ?><br>
+                                                    </a>
+                                                </div>
+                                                <footer class="bg-secondary card-footer">
+                                                    <p class="font-italic">¹ Este é apenas um exemplo das diversas formas
+                                                        de se criar uma variável resource.
                                                     </p>
                                                 </footer>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade" id="nav-null" role="tabpanel" aria-labelledby="nav-null-tab">Null</div>
                             </div>
                         </div>
 
