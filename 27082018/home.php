@@ -35,7 +35,7 @@
 <div class="container-fluid py-2">
     <div class="row">
 
-        <div class="col-xl-4 col-md-12">
+        <div class="col-xl-3 col-md-12">
             <div class="row">
 
                 <div class="col-md-12 pt-2">
@@ -86,7 +86,7 @@
             </div>
         </div>
 
-        <div class="col-xl-8 col-md-12 pt-2">
+        <div class="col-xl-9 col-md-12 pt-2">
             <div class="card">
                 <div class="card-header text-center">
                     <h2>Tipos de variáveis</h2>
@@ -256,88 +256,99 @@
                                                                 {<br>
                                                                     echo "Value is $value";<br>
                                                                 }?><br>
-                                                                </a>
-                                                                <p>Resultado: </p> <br>
-                                                                <?php
-                                                                $numbers = array( 1, 2, 3, 4, 5);
+                                                                </a><br>
+                                                                <p>Resultado: </p>
+                                                                <a class="btn btn-outline-success text-left" href="#">
+                                                                    <?php
+                                                                    $numbers = array( 1, 2, 3, 4, 5);
 
-                                                                foreach( $numbers as $value )
-                                                                {
-                                                                    echo "Value is $value <br>";
-                                                                }?>
+                                                                    foreach( $numbers as $value )
+                                                                    {
+                                                                        echo "Value is $value <br>";
+                                                                    }?>
+                                                                </a>
                                                             </dd>
                                                         </dl>
                                                         <dl class="col-xl-4 col-md-8">
                                                             <dt class="col-sm-12">Associativo</dt>
                                                             <dd class="col-sm-12">
-                                                                &lt;?php <br>
-                                                                $salaries = array("mohammad" => 2000, "qadir" => 1000, "zara" => 500);<br>
-                                                                ?><br>
-                                                                <p>Resultado: </p> <br>
-                                                                <?php
-                                                                    $salaries = array("mohammad" => 2000, "qadir" => 1000, "zara" => 500);
+                                                                <a class="btn btn-outline-success text-left" href="#">
+                                                                    &lt;?php <br>
+                                                                    $salaries = array("mohammad" => 2000,<br>
+                                                                    "qadir" => 1000, "zara" => 500);<br>
+                                                                    ?><br>
+                                                                </a><br>
+                                                                <p>Resultado: </p>
+                                                                <a class="btn btn-outline-success text-left" href="#">
+                                                                    <?php
+                                                                        $salaries = array("mohammad" => 2000, "qadir" => 1000, "zara" => 500);
 
-                                                                    echo "Salary of mohammad is ". $salaries['mohammad'] . "<br />";
-                                                                    echo "Salary of qadir is ".  $salaries['qadir']. "<br />";
-                                                                    echo "Salary of zara is ".  $salaries['zara']. "<br />";
-                                                                ?>
+                                                                        echo "Salary of mohammad is ". $salaries['mohammad'] . "<br>";
+                                                                        echo "Salary of qadir is ".  $salaries['qadir']. "<br>";
+                                                                        echo "Salary of zara is ".  $salaries['zara']. "<br>";
+                                                                    ?>
+                                                                </a>
                                                             </dd>
                                                         </dl>
                                                         <dl class="col-xl-4 col-md-8">
                                                             <dt class="col-sm-12">Multidimensional</dt>
                                                             <dd class="col-sm-12">
-                                                                &lt;?php <br>
-                                                                    $marks = array( <br>
-                                                                        "mohammad" => array ( <br>
-                                                                            "physics" => 35,  <br>
-                                                                            "maths" => 30, <br>
-                                                                            "chemistry" => 39 <br>
-                                                                        ), <br>
-                                                                        <br>
-                                                                        "qadir" => array (<br>
-                                                                            "physics" => 30,<br>
-                                                                            "maths" => 32,<br>
-                                                                            "chemistry" => 29<br>
-                                                                        ),<br>
-                                                                        <br>
-                                                                        "zara" => array (<br>
-                                                                            "physics" => 31,<br>
-                                                                            "maths" => 22,<br>
-                                                                            "chemistry" => 39<br>
-                                                                        )<br>
-                                                                    );?> <br>
-                                                                <p>Resultado: </p><br>
-                                                                <?php
-                                                                    $marks = array(
-                                                                        "mohammad" => array (
-                                                                            "physics" => 35,
-                                                                            "maths" => 30,
-                                                                            "chemistry" => 39
-                                                                        ),
+                                                                <a class="btn btn-outline-success text-left" href="#">
+                                                                    &lt;?php <br>
+                                                                        $marks = array( <br>
+                                                                            "mohammad" => array ( <br>
+                                                                                "physics" => 35,  <br>
+                                                                                "maths" => 30, <br>
+                                                                                "chemistry" => 39 <br>
+                                                                            ), <br>
+                                                                            <br>
+                                                                            "qadir" => array (<br>
+                                                                                "physics" => 30,<br>
+                                                                                "maths" => 32,<br>
+                                                                                "chemistry" => 29<br>
+                                                                            ),<br>
+                                                                            <br>
+                                                                            "zara" => array (<br>
+                                                                                "physics" => 31,<br>
+                                                                                "maths" => 22,<br>
+                                                                                "chemistry" => 39<br>
+                                                                            )<br>
+                                                                        );?> <br>
+                                                                </a><br>
+                                                                <p>Resultado: </p>
+                                                                <a class="btn btn-outline-success text-left" href="#">
+                                                                    <?php
+                                                                        $marks = array(
+                                                                            "mohammad" => array (
+                                                                                "physics" => 35,
+                                                                                "maths" => 30,
+                                                                                "chemistry" => 39
+                                                                            ),
 
-                                                                        "qadir" => array (
-                                                                            "physics" => 30,
-                                                                            "maths" => 32,
-                                                                            "chemistry" => 29
-                                                                        ),
+                                                                            "qadir" => array (
+                                                                                "physics" => 30,
+                                                                                "maths" => 32,
+                                                                                "chemistry" => 29
+                                                                            ),
 
-                                                                        "zara" => array (
-                                                                            "physics" => 31,
-                                                                            "maths" => 22,
-                                                                            "chemistry" => 39
-                                                                        )
-                                                                    );
+                                                                            "zara" => array (
+                                                                                "physics" => 31,
+                                                                                "maths" => 22,
+                                                                                "chemistry" => 39
+                                                                            )
+                                                                        );
 
-                                                                    /* Accessing multi-dimensional array values */
-                                                                    echo "Marks for mohammad in physics : " ;
-                                                                    echo $marks['mohammad']['physics'] . "<br />";
+                                                                        /* Accessing multi-dimensional array values */
+                                                                        echo "Marks for mohammad in physics : " ;
+                                                                        echo $marks['mohammad']['physics'] . "<br />";
 
-                                                                    echo "Marks for qadir in maths : ";
-                                                                    echo $marks['qadir']['maths'] . "<br />";
+                                                                        echo "Marks for qadir in maths : ";
+                                                                        echo $marks['qadir']['maths'] . "<br />";
 
-                                                                    echo "Marks for zara in chemistry : " ;
-                                                                    echo $marks['zara']['chemistry'] . "<br />";
-                                                                ?>
+                                                                        echo "Marks for zara in chemistry : " ;
+                                                                        echo $marks['zara']['chemistry'] . "<br />";
+                                                                    ?>
+                                                                </a>
                                                             </dd>
                                                         </dl>
                                                     </dl>
@@ -352,8 +363,117 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade" id="nav-object" role="tabpanel" aria-labelledby="nav-object-tab">Object</div>
-                                <div class="tab-pane fade" id="nav-callable" role="tabpanel" aria-labelledby="nav-callable-tab">Callable</div>
+                                <div class="tab-pane fade" id="nav-object" role="tabpanel" aria-labelledby="nav-object-tab">
+                                    <div class="col-xl-12 col-md-6 pt-3">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h2>Object</h2>
+                                                <p>São estruturas instanciadas a partir de classes pré-definidas</p>
+
+                                            </div>
+                                            <div class="card-body">
+
+                                                <div class="alert alert-secondary">
+                                                    Uma instância individual da estrutura de dados definido por uma classe.
+                                                    Você define uma classe, de uma vez e, em seguida, fazer muitos objetos que
+                                                    pertencem a ele. Objetos também são conhecidos como exemplo.
+                                                </div>
+
+                                                <div class="alert alert-success justify-content-center">
+                                                    <p>Ex¹:</p><br>
+                                                    <a class="btn btn-outline-success text-left" href="#">
+                                                        &lt;?php<br>
+                                                            classe Exemplo{<br>
+                                                                $nome = Bruno;<br>
+                                                                <br>
+                                                                function useExemplo{<br>
+                                                                    echo $nome;<br>
+                                                                }<br>
+                                                            }<br>
+                                                            <br>
+                                                            $usenome = new Exemplo;<br>
+                                                            <br>
+                                                            $usnome->useExemplo();<br>
+                                                        ?><br>
+                                                    </a>
+                                                    <p>Resultado: </p>
+                                                    <a class="btn btn-outline-success text-left" href="#">
+                                                        <?php
+                                                            class Exemplo{
+                                                                var $nome = "Bruno";
+
+                                                                function useExemplo()
+                                                                {
+                                                                    echo $this->nome;
+                                                                }
+                                                        }?>
+                                                        <?php
+                                                            $usenome = new Exemplo;
+
+                                                            $usenome->useExemplo();
+                                                        ?>
+                                                        <br>
+                                                    </a>
+                                                </div>
+                                                <footer class="bg-secondary card-footer">
+                                                    <p class="font-italic">¹ Aqui são apresentados as formas mais comuns,
+                                                        porém vale ressaltar que existem diversas formas de se criar um object.
+                                                    </p>
+                                                </footer>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="nav-callable" role="tabpanel" aria-labelledby="nav-callable-tab">
+                                    <div class="col-xl-12 col-md-6 pt-3">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h2>Callable</h2>
+                                                <p>São variáveis que quando acompanhadas de parênteses execultam uma determinada função </p>
+
+                                            </div>
+                                            <div class="card-body">
+
+                                                <div class="alert alert-secondary">
+                                                    Se numa chamada de variável esta for acompanhada de parênteses no final dela, o PHP procurará uma função com o
+                                                    mesmo nome do valor armazenado na variável e tentará executá-la.
+                                                </div>
+
+                                                <div class="alert alert-success justify-content-center">
+                                                    <p>Ex¹:</p><br>
+                                                    <a class="btn btn-outline-success text-left" href="#">
+                                                        &lt;?php<br>
+                                                            function foo() {<br>
+                                                            echo "Chamou foo()<br>\n";<br>
+                                                        }<br>
+                                                            $func = 'foo';<br>
+                                                            $func();<br>
+                                                        ?><br>
+                                                    </a>
+                                                    <p>Resultado: </p>
+                                                    <a class="btn btn-outline-success text-left" href="#">
+                                                        <?php
+                                                            function foo()
+                                                            {
+                                                                echo "Chamou foo()";
+                                                            }
+                                                        ?>
+                                                        <?php
+                                                            $func = 'foo';
+                                                            $func();
+                                                        ?>
+                                                        <br>
+                                                    </a>
+                                                </div>
+                                                <footer class="bg-secondary card-footer">
+                                                    <p class="font-italic">¹ Este é apenas um exemplo das diversas formas
+                                                        de se criar uma variável callable.
+                                                    </p>
+                                                </footer>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
                         </div>
@@ -366,7 +486,56 @@
                             </nav>
 
                             <div class="tab-content" id="nav-tab3Content">
-                                <div class="tab-pane fade show active" id="nav-resorce" role="tabpanel" aria-labelledby="nav-resorce-tab">Resorce</div>
+                                <div class="tab-pane fade show active" id="nav-resorce" role="tabpanel" aria-labelledby="nav-resorce-tab">
+                                    <div class="col-xl-12 col-md-6 pt-3">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h2>Resorce</h2>
+                                                <p>São variáveis que quando acompanhadas de parênteses execultam uma determinada função </p>
+
+                                            </div>
+                                            <div class="card-body">
+
+                                                <div class="alert alert-secondary">
+                                                    Se um nome de variável tem parênteses no final dela, o PHP procurará uma função com o
+                                                    mesmo nome e tentará executá-la.
+                                                </div>
+
+                                                <div class="alert alert-success justify-content-center">
+                                                    <p>Ex¹:</p><br>
+                                                    <a class="btn btn-outline-success text-left" href="#">
+                                                        &lt;?php<br>
+                                                        function foo() {<br>
+                                                        echo "Chamou foo()<br>\n";<br>
+                                                        }<br>
+                                                        $func = 'foo';<br>
+                                                        $func();<br>
+                                                        ?><br>
+                                                    </a>
+                                                    <p>Resultado: </p>
+                                                    <a class="btn btn-outline-success text-left" href="#">
+                                                        <?php
+                                                        function fooo()
+                                                        {
+                                                            echo "Chamou foo()";
+                                                        }
+                                                        ?>
+                                                        <?php
+                                                        $func = 'foo';
+                                                        $func();
+                                                        ?>
+                                                        <br>
+                                                    </a>
+                                                </div>
+                                                <footer class="bg-secondary card-footer">
+                                                    <p class="font-italic">¹ Este é apenas um exemplo das diversas formas
+                                                        de se criar uma variável resorce.
+                                                    </p>
+                                                </footer>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="tab-pane fade" id="nav-null" role="tabpanel" aria-labelledby="nav-null-tab">Null</div>
                             </div>
                         </div>
@@ -382,7 +551,7 @@
 
 <footer class="bg-light text-success">
 
-    <div class="container py-0">
+    <div class="container">
         <div class="row">
 
             <div class="col-xl-6 col-md-6 mt-4">
@@ -399,7 +568,6 @@
             </div>
         </div>
     </div>
-
 </footer>
 
 </body>
