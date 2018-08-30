@@ -564,7 +564,7 @@
                                                 </div>
                                                 <footer class="bg-secondary card-footer">
                                                     <p class="font-italic">¹ Este é apenas um exemplo das diversas formas
-                                                        de se criar uma variável resource.
+                                                        de se criar uma variável Null.
                                                     </p>
                                                 </footer>
                                             </div>
