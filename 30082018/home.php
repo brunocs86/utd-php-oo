@@ -24,7 +24,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <h2 class="text-success ml-md-2">PHP Orientado à Objetos - Variáveis</h2>
+                    <h2 class="text-success ml-md-2">PHP Orientado à Objetos - Operadores</h2>
                 </li>
             </ul>
         </div>
