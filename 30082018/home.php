@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>PHP OO- Operadores</title>
+    <title>PHP OO - Formularios</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.css">
@@ -24,7 +24,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <h2 class="text-success ml-md-2">PHP Orientado à Objetos - Operadores</h2>
+                    <h2 class="text-success ml-md-2">PHP Orientado à Objetos - Formularios</h2>
                 </li>
             </ul>
         </div>
@@ -38,7 +38,7 @@
         <div class="col-xl-5 col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <h2>Operadores no PHP</h2>
+                    <h2>Formularios no PHP</h2>
                 </div>
                 <div class="card-body">
                     &lt;?php<br>
@@ -157,7 +157,7 @@
                 <div class="col-xl-12 col-md-12 pb-2">
                     <div class="card">
                         <div class="card-header">
-                            <h2>PHP - Operadores de execução</h2>
+                            <h2>PHP - Formularios</h2>
                         </div>
                         <div class="card-body">
                             <p>

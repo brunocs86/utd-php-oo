@@ -1,3 +1,6 @@
+<?php
+    require_once("logica-usuario.php");
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -70,46 +73,52 @@
 </header>
 
 <!-- Form-->
-    <section class="mt-5 pt-5 mb-5 pb-5">
-        <div class="container mt-3">
-            <div class="row justify-content-center">
+    <?php if(usuarioEstaLogado()) {?>
+        <p class="text-success">Você está logado como <?= usuarioLogado() ?>. <a href="logout.php">Deslogar</a></p>
+    <?php } else {?>
+        <section class="mt-5 pt-5 mb-5 pb-5">
+            <div class="container mt-3">
+                <div class="row justify-content-center">
 
-                <div class="col-8">
-                    <div class="card">
-                        <h5 class="card-header primary-color white-text text-center py-4">
-                            <strong>Sing in</strong>
-                        </h5>
 
-                        <div class="card-body px-lg-5 pt-0">
-                            <form class="text-center was-validated form-color-style" action="login.php">
+                    <div class="col-8">
+                        <div class="card">
+                            <h5 class="card-header primary-color white-text text-center py-4">
+                                <strong>Sing in</strong>
+                            </h5>
 
-                                <div class="md-form">
-                                    <input type="email" id="materialLoginFormEmail" class="form-control">
-                                    <label for="materialLoginFormEmail">E-mail</label>
-                                </div>
+                            <div class="card-body px-lg-5 pt-0">
+                                <form class="text-center was-validated form-color-style" action="login.php" method="post">
 
-                                <div class="md-form">
-                                    <input type="password" id="materialLoginFormPassword" class="form-control" aria-label="Password">
-                                    <label for="materialLoginFormPassword">Password</label>
-                                </div>
+                                    <div class="md-form">
+                                        <input type="email" id="materialLoginFormEmail" class="form-control">
+                                        <label for="materialLoginFormEmail">E-mail</label>
+                                    </div>
 
-                                <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">
-                                    Sign in<i class="fa fa-sign-in ml-3"></i>
-                                </button>
+                                    <div class="md-form">
+                                        <input type="password" id="materialLoginFormPassword" class="form-control" aria-label="Password">
+                                        <label for="materialLoginFormPassword">Password</label>
+                                    </div>
 
-                                <div class="custom-control custom-checkbox text-left mb-3">
-                                    <input type="checkbox" class="custom-control-input" id="customControlValidation1" checked>
-                                    <label class="custom-control-label" for="customControlValidation1">Lembrar-me</label>
-                                    <div class="invalid-feedback">Example invalid feedback text</div>
-                                </div>
-                            </form>
+                                    <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">
+                                        Sign in<i class="fa fa-sign-in ml-3"></i>
+                                    </button>
+
+                                    <div class="custom-control custom-checkbox text-left mb-3">
+                                        <input type="checkbox" class="custom-control-input" id="customControlValidation1" checked>
+                                        <label class="custom-control-label" for="customControlValidation1">Lembrar-me</label>
+                                        <div class="invalid-feedback">Example invalid feedback text</div>
+                                    </div>
+                                </form>
+
+                            </div>
                         </div>
                     </div>
-                </div>
 
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    <?php } ?>
 
 <!--<div class="input-group mb-3">
   <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
