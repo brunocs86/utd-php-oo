@@ -8,14 +8,36 @@
 
 namespace LojaAgua\entidades;
 
-
+/**
+* @Entity
+* @Table(name="pedido")
+*/
 class Pedido{
 
+    /**
+    * @var integer @id
+    *      @Column(name="id", type="integer")
+    *      @GeneratedValue(strategy="AUTO")
+    */
     private $id;
+
+    /**
+    * @Column(type="datetime")
+    * @var DateTime
+    */
     private $hora;
+
+    /**
+    * @ManyToOne(targetEntity="Usuario",cascade={"persist"})
+    * @JoinColumn(name="usuario_id", referencedColumnName="id")
+    */
     private $usuario;
 
-    public function __construct($id = 0,$hora= "0000-00-00 00:00:00" ,$usuario = 0,$itens= array()){
+    /**
+    * @OneToMany(targetEntity="Item", mappedBy="pedido",cascade={"persist","remove"})
+    **/
+    private $itens;
+    public function __construct($id = 0,$hora = "0000-00-00 00:00:00",$usuario = 0,$itens=array()){
         $this->id = $id;
         $this->hora = $hora;
         $this->usuario = $usuario;
@@ -24,7 +46,7 @@ class Pedido{
     }
 
     public static function construct($array){
-        $obj = new Pedidos();
+        $obj = new pedido();
         $obj->setId( $array['id']);
         $obj->setHora( $array['hora']);
         $obj->setUsuario( $array['usuario']);
@@ -65,7 +87,7 @@ class Pedido{
         $this->itens=$itens;
     }
     public function equals($object){
-        if($object instanceof Pedidos){
+        if($object instanceof pedido){
 
             if($this->id!=$object->id){
                 return false;

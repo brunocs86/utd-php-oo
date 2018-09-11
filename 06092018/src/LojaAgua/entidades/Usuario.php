@@ -9,7 +9,7 @@
 namespace LojaAgua\entidades;
 
  /**
- * @entity
+ * @Entity
  * @Table(name="usuario")
  */
 class Usuario{
