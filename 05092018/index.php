@@ -10,7 +10,7 @@
     <title>Aula Bootstrap - Formulario</title>
 
     <!-- Font Awesome -->
-    <link href="css\font-awesome.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <!-- Material Design Bootstrap -->
