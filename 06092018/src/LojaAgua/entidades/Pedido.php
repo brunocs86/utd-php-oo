@@ -28,7 +28,7 @@ class Pedido{
     private $hora;
 
     /**
-    * @ManyToOne(targetEntity="Usuario")
+    * @ManyToOne(targetEntity="Usuario",cascade={"persist"})
     * @JoinColumn(name="usuario_id", referencedColumnName="id")
     */
     private $usuario;
