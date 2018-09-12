@@ -16,7 +16,7 @@ $dao = new UsuarioDAO();
 $dao->insert($user);
 
 $time = new DateTime("now");
-$pedido = new Pedido(0, $time, null, array());
+$pedido = new Pedido(0, $time, $user, array());
 $dao2 = new PedidoDAO($pedido);
 
 $dao2->insert($pedido);
