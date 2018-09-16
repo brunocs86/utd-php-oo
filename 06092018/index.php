@@ -11,9 +11,6 @@ use LojaAgua\persistencia\PedidoDAO;
 date_default_timezone_set('America/Sao_Paulo');
 
 $user = new Usuario(0, "nega@gmail.com", "123", "rua X");
-$dao = new UsuarioDAO();
-
-$dao->insert($user);
 
 $time = new DateTime("now");
 $pedido = new Pedido(0, $time, $user, array());

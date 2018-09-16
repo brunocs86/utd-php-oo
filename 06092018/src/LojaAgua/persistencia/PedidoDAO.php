@@ -12,7 +12,7 @@ class PedidoDAO extends AbstractDAO{
     }
 
     public function insert($obj){
-        $usuarioPersistido = $this->entityManager->find('LojaAgua\entidades\Usuario',$obj->getUsuario()->getId());
+        $usuarioPersistido = $this->entityManager->find('LojaAgua\entidades\Usuario',$obj->getUsuario());
         $obj->getUsuario($usuarioPersistido);
         parent::insert($obj);
     }
