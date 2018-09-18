@@ -10,35 +10,29 @@
 <body>
 <div class="container">
 
-<?php
+    <?php
+        $array = array();
+        $a = 11;
+        $b = 77;
 
-//    $a = 11;
-//    $b = 77;
-
-    function achaPares($num1, $num2){
-        $retorno = array();
-        $tamanho = $num2 - $num1;
-        $par = $num1;
-
-        for($i=0; $i < $tamanho; $i++){
+        function achaPares($num1, $num2){
+            $retorno = array();
             $j = 0;
 
-            if ($par%2 === 0)
-            {
-                $retorno[$j] =  $par;
-                $j++;
+            for($i=$num1; $i <= $num2; $i++){
+                if ($i%2 === 0)
+                {
+                    $retorno[$j] =  $i;
+                    $j++;
+                }
             }
-            $par += 1;
-
+            return $retorno;
         }
-
-        print_r($retorno);
-
-    }
-
-
-    achaPares(11, 30);
-?>
+        $array = achaPares($a, $b);
+        echo "<br>";
+        echo "<br>";
+        print_r($array);
+    ?>
 
 
 </div>
