@@ -9,29 +9,11 @@
 </head>
 <body>
 <div class="container">
-
-    <?php
-        $array = array();
-        $a = 11;
-        $b = 77;
-
-        function achaPares($num1, $num2){
-            $retorno = array();
-            $j = 0;
-            for($i=$num1; $i <= $num2; $i++){
-                if ($i%2 === 0)
-                {
-                    $retorno[$j] =  $i;
-                    $j++;
-                }
-            }
-            return $retorno;
-        }
-        $array = achaPares($a, $b);
-
-        print_r($array);
-    ?>
-
+    <form action="script.php" method="get">
+        Campo 1: <input type=text name=campo1><br>
+        Campo 2: <input type=text name=campo2><br>
+        <input type=submit value="OK">
+    </form>
 </div>
 
 </body>
