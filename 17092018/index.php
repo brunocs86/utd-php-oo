@@ -18,7 +18,6 @@
         function achaPares($num1, $num2){
             $retorno = array();
             $j = 0;
-
             for($i=$num1; $i <= $num2; $i++){
                 if ($i%2 === 0)
                 {
@@ -29,11 +28,9 @@
             return $retorno;
         }
         $array = achaPares($a, $b);
-        echo "<br>";
-        echo "<br>";
+
         print_r($array);
     ?>
-
 
 </div>
 
