@@ -10,8 +10,10 @@
 <body>
 <div class="container">
     <form action="script.php" method="get">
-        Campo 1: <input type="text" name="campo1"><br>
-        Campo 2: <input type="text" name="campo2"><br>
+        Campo 1: <input type="text" name="campo1"><br><br>
+        Campo 2: <input type="text" name="campo2"><br><br>
+        Campo 3: <input type="text" name="campo3"><br><br>
+        Campo 4: <input type="text" name="campo4"><br><br>
         <input class="btn-outline-dark" type="submit" value="OK">
     </form>
 </div>
