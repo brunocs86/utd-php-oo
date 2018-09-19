@@ -1,3 +1,12 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: utd
+ * Date: 19/09/18
+ * Time: 14:35
+ */
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -12,9 +21,29 @@
     <link href="css/font-awesome.css" rel="stylesheet">
 </head>
 <body>
-<nav class="navbar navbar-light bg-info">
+<!--<nav class="navbar navbar-light bg-info">
     <a class="navbar-brand text-white mr-0"><h2>Bruno Carlos Silva</h2></a>
+</nav>-->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-info">
+    <a class="navbar-brand" href="#"><h2 class="text-white"><strong>Bruno Carlos Silva</strong></h2></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mr-0">
+            <li class="nav-item active">
+                <a class="nav-link text-white" href="#"><strong>Home</strong> <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="php.php"><strong>PHP</strong></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#"><strong>Contato</strong></a>
+            </li>
+    </div>
 </nav>
+
 <div class="container p-3">
     <div class="row">
         <div class="col-lg-9 col-md-12">
