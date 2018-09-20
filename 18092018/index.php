@@ -14,8 +14,8 @@
         Campo 2: <input type="text" name="campo2"><br><br>
         Campo 3: <input type="text" name="campo3"><br><br>
         Campo 4: <input type="text" name="campo4"><br><br>
-        <?php echo "<br>";?>
-        <button type="submit" class="btn btn-info">OK</button>
+        <br>
+        <button type="submit" class="btn btn-outline-info">OK</button>
     </form>
 </div>
 

@@ -12,7 +12,7 @@
     <form action="script.php" method="get">
         Campo 1: <input type="text" name="campo1"><br>
         Campo 2: <input type="text" name="campo2"><br>
-        <input class="btn-outline-dark" type="submit" value="OK">
+        <input class="btn btn-outline-info" type="submit" value="OK">
     </form>
 </div>
 

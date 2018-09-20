@@ -43,7 +43,7 @@
 echo "<br>";
 echo "<br>";
 ?>
-    <a class="btn btn-info" href="index.php">Voltar</a>
+    <a class="btn btn-outline-info" href="index.php">Voltar</a>
 
 </div>
 

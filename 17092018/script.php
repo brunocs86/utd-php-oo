@@ -14,8 +14,8 @@
     echo "<br>";
     echo "O valor de CAMPO 2 é: " . $_GET["campo2"];
 
-    $valor1 = $_GET["campo1"];
-    $valor2 = $_GET["campo2"];
+/*    $valor1 = $_GET["campo1"];
+    $valor2 = $_GET["campo2"];*/
 
     echo "<br>";
     echo "<br>";
@@ -32,14 +32,14 @@
         }
         return $retorno;
     }
-    $retorno = achaPares($valor1, $valor2);
+    $retorno = achaPares($_GET["campo1"], $_GET["campo2"]);
 
     print_r($retorno);
 
     echo "<br>";
     echo "<br>";
 ?>
-    <a class="btn btn-info" href="index.php">Voltar</a>
+    <a class="btn btn-outline-info" href="index.php">Voltar</a>
 
 </div>
 
