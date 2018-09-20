@@ -14,23 +14,34 @@
     echo "<br>";
     echo "O valor de CAMPO 2 é: " . $_GET["campo2"];
     echo "<br>";
-    echo "O valor de CAMPO 2 é: " . $_GET["campo3"];
+    echo "O valor de CAMPO 3 é: " . $_GET["campo3"];
     echo "<br>";
-    echo "O valor de CAMPO 2 é: " . $_GET["campo4"];
+    echo "O valor de CAMPO 4 é: " . $_GET["campo4"];
 
-$valor1 = $_GET["campo1"];
-$valor2 = $_GET["campo2"];
-$valor3 = $_GET["campo3"];
-$valor4 = $_GET["campo4"];
+    $valor1 = $_GET["campo1"];
+    $valor2 = $_GET["campo2"];
+    $valor3 = $_GET["campo3"];
+    $valor4 = $_GET["campo4"];
 
     echo "<br>";
     echo "<br>";
 
     function desafio($num1, $num2, $num3, $num4){
-        $resul = $valor1 + $valor2;
+
+        $result1 = $num1 + $num2;
+        echo "A soma é igual a ".$result1;
+        echo "<br>";
+        $result2 = $num3 * $num4;
+        echo "A multiplicação é igual a ".$result2;
+        echo "<br>";
+        $result3 = $result2 / $result1;
+        echo "A divisão de ".$result2." por ".$result1." é igual a ".$result3;
+
     }
 
-    desafio($valor1, $valor2, $valor3, $valor4);
+    desafio($_GET["campo1"], $_GET["campo2"], $_GET["campo3"], $_GET["campo4"]);
+echo "<br>";
+echo "<br>";
 ?>
     <a class="btn btn-info" href="index.php">Voltar</a>
 
