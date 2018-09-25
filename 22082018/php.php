@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Introdução ao PHP - Variáveis</title>
+    <title>UTD PHP-OO - Avaliação</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.css">
@@ -10,21 +10,31 @@
 
 <div class="container-fluid">
     <!--NavBar-->
-    <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light py-3 box-shadow">
+    <nav class="navbar navbar-expand-md fixed-top navbar-light bg-info py-3 box-shadow">
 
-        <a class="navbar-brand" href="index.php">
-            <img src="http://utd.sct.ce.gov.br/templates/template_GOV/img/logo.png" alt="Caravan">
-        </a>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand text-white" href="#">UTD</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
             <span class="navbar-toggler-icon"></span>
         </button>
+
+        <div class="collapse navbar-collapse text-white" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="index.html">Home<span class="sr-only">(Página atual)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="php.php">PHP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Contato</a>
+                </li>
+            </ul>
+        </div>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <h2 class="text-success ml-md-2">PHP Orientado à Objetos - Variáveis</h2>
+                    <h2 class="text-white ml-md-2">Bruno Carlos Silva</h2>
                 </li>
             </ul>
         </div>
@@ -583,7 +593,7 @@
     </div>
 </div>
 
-<footer class="bg-light text-success">
+<footer class="bg-info text-white">
 
     <div class="container">
         <div class="row">
@@ -596,8 +606,8 @@
 
             <div class="col-xl-2 col-md-3 ml-auto">
                 <ul class="list-unstyled text-secondary font-weight-bold">
-                    <li><a class="btn btn-outline-success btn-sm my-1 btn-block" href="https://github.com/brunocs86" target="_blank"><i class="fa fa-github-alt mr-2"></i>GitHub</a></li>
-                    <li><a class="btn btn-outline-success btn-sm mb-1 btn-block" href="https://twitter.com/TemorYehsua" target="_blank"><i class="fa fa-twitter-square mr-2"></i>Twitter</a></li>
+                    <li><a class="btn btn-outline-light btn-sm my-1 btn-block" href="https://github.com/brunocs86" target="_blank"><i class="fa fa-github-alt mr-2"></i>GitHub</a></li>
+                    <li><a class="btn btn-outline-light btn-sm mb-1 btn-block" href="https://twitter.com/TemorYehsua" target="_blank"><i class="fa fa-twitter-square mr-2"></i>Twitter</a></li>
                 </ul>
             </div>
         </div>
