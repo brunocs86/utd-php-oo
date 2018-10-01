@@ -7,7 +7,7 @@ $cpf = new Cpf();
 $rg = new Rg();
 $passaporte = new Passaporte();
 
-$cpf->setNumero("123.123.123-23");
+/*$cpf->setNumero("123.123.123-23");
 $cpf->setDataEmissao("31/02/2000");
 $cpf->setOrgao("SSPDS");
 $cpf->setNacionalidade("Brasileiro");
@@ -32,5 +32,5 @@ $passaporte->setNacionalidade("Brasileiro");
 $passaporte->setNaturalidade("Cearence");
 $passaporte->setPai("jose");
 $passaporte->setMae("Maria");
-$passaporte->setRegistro("cartorio joao de deus");
+$passaporte->setRegistro("cartorio joao de deus");*/
 
