@@ -1,5 +1,5 @@
 <?php
-require 'Documentos.class.php';
+require_once("Documentos.class.php");
 class Rg extends Documentos {
 
 }

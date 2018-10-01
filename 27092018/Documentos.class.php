@@ -1,7 +1,5 @@
 <?php
-
 class Documentos{
-
     private $numero;
     private $dataEmissao;
     private $orgao;
@@ -11,7 +9,6 @@ class Documentos{
     private $nacionalidade;
     private $naturalidade;
     private $CI;
-
     /**
      * @return mixed
      */
@@ -19,7 +16,6 @@ class Documentos{
     {
         return $this->CI;
     }
-
     /**
      * @param mixed $CI
      */
@@ -27,7 +23,6 @@ class Documentos{
     {
         $this->CI = $CI;
     }
-
     /**
      * @return mixed
      */
@@ -35,7 +30,6 @@ class Documentos{
     {
         return $this->pai;
     }
-
     /**
      * @param mixed $pai
      */
@@ -43,7 +37,6 @@ class Documentos{
     {
         $this->pai = $pai;
     }
-
     /**
      * @return mixed
      */
@@ -51,7 +44,6 @@ class Documentos{
     {
         return $this->mae;
     }
-
     /**
      * @param mixed $mae
      */
@@ -59,7 +51,6 @@ class Documentos{
     {
         $this->mae = $mae;
     }
-
     /**
      * @return mixed
      */
@@ -67,7 +58,6 @@ class Documentos{
     {
         return $this->registro;
     }
-
     /**
      * @param mixed $registro
      */
@@ -75,7 +65,6 @@ class Documentos{
     {
         $this->registro = $registro;
     }
-
     /**
      * @return mixed
      */
@@ -83,7 +72,6 @@ class Documentos{
     {
         return $this->nacionalidade;
     }
-
     /**
      * @param mixed $nacionalidade
      */
@@ -91,7 +79,6 @@ class Documentos{
     {
         $this->nacionalidade = $nacionalidade;
     }
-
     /**
      * @return mixed
      */
@@ -99,7 +86,6 @@ class Documentos{
     {
         return $this->naturalidade;
     }
-
     /**
      * @param mixed $naturalidade
      */
@@ -107,7 +93,6 @@ class Documentos{
     {
         $this->naturalidade = $naturalidade;
     }
-
     /**
      * @return mixed
      */
@@ -115,7 +100,6 @@ class Documentos{
     {
         return $this->orgao;
     }
-
     /**
      * @param mixed $orgao
      */
@@ -123,7 +107,6 @@ class Documentos{
     {
         $this->orgao = $orgao;
     }
-
     /**
      * @return mixed
      */
@@ -131,7 +114,6 @@ class Documentos{
     {
         return $this->numero;
     }
-
     /**
      * @param mixed $numero
      */
@@ -139,7 +121,6 @@ class Documentos{
     {
         $this->numero = $numero;
     }
-
     /**
      * @return mixed
      */
@@ -147,7 +128,6 @@ class Documentos{
     {
         return $this->dataEmissao;
     }
-
     /**
      * @param mixed $dataEmissao
      */
@@ -155,22 +135,4 @@ class Documentos{
     {
         $this->dataEmissao = $dataEmissao;
     }
-
 }
-
-/*$cpf = new Documentos();
-$rg = new Documentos();
-$passaporte = new Documentos();
-
-$cpf->setNumero("123.123.123-23");
-$cpf->setDataEmissao("31/02/2000");
-$rg->setNumero("12312312386");
-$rg->setDataEmissao("31/02/2000");
-$passaporte->setNumero('br010986');
-$passaporte->setDataEmissao("31/02/2000");
-
-var_dump($cpf);
-echo "<br><br>";
-var_dump($rg);
-echo "<br><br>";
-var_dump($passaporte);*/
