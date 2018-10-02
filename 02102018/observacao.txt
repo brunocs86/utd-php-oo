@@ -1,0 +1,5 @@
+aula sobre classes abstratas
+
+http://www.php.net/manual/pt_BR/language.oop5.abstract.php
+
+https://secure.php.net/manual/pt_BR/language.types.string.php
