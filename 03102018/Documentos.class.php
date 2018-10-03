@@ -1,4 +1,7 @@
 <?php
+
+require_once("ChecaDocumentos.class.php");
+
 class Documentos extends ChecaDocumentos {
     private $numero;
     private $dataEmissao;
