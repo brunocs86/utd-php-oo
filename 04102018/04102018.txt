@@ -1,0 +1,29 @@
+Home {
+    Header,
+    Menu com 4 opções clicaveis (home, portifolio, projetos, contatos);
+    slider;
+    3 cards
+    footer
+}
+
+Portifolio {
+    Header,
+    Menu com 4 opções clicaveis (home, portifolio, projetos, contatos);
+    8 Tumbnails
+    Texto | imagem
+    footer
+}
+
+Projetos {
+    Header,
+    Menu com 4 opções clicaveis (home, portifolio, projetos, contatos);
+    4 Cards
+    footer
+}
+
+Contato {
+    Header,
+    Menu com 4 opções clicaveis (home, portifolio, projetos, contatos);
+    Formulario (nome, email, assunto, texto, btn enviar, btn limpar) | aside
+    footer
+}
