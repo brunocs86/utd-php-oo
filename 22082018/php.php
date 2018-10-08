@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>UTD PHP-OO - Avaliação</title>
+    <title>UTD PHP - OO - Avaliação</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.css">
@@ -51,7 +51,7 @@
                 <div class="col-md-12 pt-2">
                     <div class="card">
                         <div class="card-header">
-                            <h2>Variáveis no PHP</h2>
+                            <h3>Criação de variável</h3>
                         </div>
                         <div class="card-body">
                             <p>Dentro do PHP, as variáveis devem começar com $</p>
@@ -75,38 +75,68 @@
                 <div class="col-md-12 pt-4">
                     <div class="card">
                         <div class="card-header">
-                            <h2>Tipos de variáveis</h2>
+                            <h3>Criação de array</h3>
                         </div>
                         <div class="card-body">
-                            <p>Dentro do PHP, podemos saber o tipo de variável<br>utiliando a palavra reservada var_dump</p>
+                            <p>A criação de array, dentro outas maneiras, pode feita conforme abaixo</p>
                             <div class="alert alert-secondary">
-                                $name = "Marcus"; <br>
-                                var_dump($name);
+                                $name1 = array(); <br>
+                                $name2 = []; <br>
+                                var_dump($name1);<br>
+                                var_dump($name2);
                             </div>
                             <div class="alert alert-success">
                                 <?php
-                                $name = "Marcus";
-                                var_dump($name);
+                                    $name1 = array();
+                                    $name2 = [];
+                                    var_dump($name1);
+                                    echo "<br>";
+                                    var_dump($name2);
                                 ?>
                             </div>
-                            <p>Recebemos como resultado o tipo, tamanho<br>e valor da variável alocada.</p>
+                            <p>Recebemos como resultado o tipo, tamanho e valor da variável<br>alocada.</p>
                         </div>
                     </div>
                 </div>
+
+                <div class="col-md-12 pt-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Adicionando elemento no array</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>A adição de elemento no array ocoore utilizando indice, chaves ou com funções
+                                disponibilizadas pelo próprio php </p>
+                            <div class="alert alert-secondary">
+                                $name = [10, 12]; <br>
+                                array_push($name, 7, 15, 21);<br>
+                                print_r($name);
+                            </div>
+                            <div class="alert alert-success">
+                                <?php
+                                $name = [10, 12];
+                                array_push($name, 7,15, 21);
+                                print_r($name);
+                                ?>
+                            </div>
+                            <p>Com a função do php array_push inserimor três elementos ao final do array.</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
         <div class="col-xl-9 col-md-12 pt-2">
             <div class="card">
                 <div class="card-header text-center">
-                    <h2>Tipos de variáveis</h2>
+                    <h2>Estruturas de</h2>
                 </div>
                 <div class="card-body">
                     <nav>
                         <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Tipos escalares</a>
-                            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Tipos compostos</a>
-                            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Tipos especiais</a>
+                            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Repetição</a>
+                            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Condição</a>
                         </div>
                     </nav>
                     <div class="tab-content" id="nav-tabContent">
@@ -496,93 +526,6 @@
                                     <a class="nav-item nav-link" id="nav-null-tab" data-toggle="tab" href="#nav-null" role="tab" aria-controls="nav-null" aria-selected="false">Null</a>
                                 </div>
                             </nav>
-
-                            <div class="tab-content" id="nav-tab3Content">
-                                <div class="tab-pane fade show active" id="nav-resorce" role="tabpanel" aria-labelledby="nav-resorce-tab">
-                                    <div class="col-xl-12 col-md-6 pt-3">
-                                        <div class="card">
-                                            <div class="card-header">
-                                                <h2>Resource</h2>
-                                                <p>São variáveis especiais que referencial recursos externos ao PHP.</p>
-
-                                            </div>
-                                            <div class="card-body">
-
-                                                <div class="alert alert-secondary">
-                                                    Segue abaixo variável do tipo resource que configura a conexão com o banco de dados
-                                                </div>
-
-                                                <div class="alert alert-success justify-content-center">
-                                                    <p>Ex¹:</p><br>
-                                                    <a class="btn btn-outline-success text-left" href="#">
-                                                        &lt;?php<br>
-                                                        $db['default'] = array(<br>
-                                                        'dsn'	=> '',
-                                                        'hostname' => 'localhost',<br>
-                                                        'username' => '',<br>
-                                                        'password' => '',<br>
-                                                        'database' => '',<br>
-                                                        'dbdriver' => 'mysqli',<br>
-                                                        'dbprefix' => '',<br>
-                                                        'pconnect' => FALSE,<br>
-                                                        'db_debug' => (ENVIRONMENT !== 'production'),<br>
-                                                        'cache_on' => FALSE,<br>
-                                                        'cachedir' => '',<br>
-                                                        'char_set' => 'utf8',<br>
-                                                        'dbcollat' => 'utf8_general_ci',<br>
-                                                        'swap_pre' => '',<br>
-                                                        'encrypt' => FALSE,<br>
-                                                        'compress' => FALSE,<br>
-                                                        'stricton' => FALSE,<br>
-                                                        'failover' => array(),<br>
-                                                        'save_queries' => TRUE<br>
-                                                        );
-                                                        ?><br>
-                                                    </a>
-                                                </div>
-                                                <footer class="bg-secondary card-footer">
-                                                    <p class="font-italic">¹ Este é apenas um exemplo das diversas formas
-                                                        de se criar uma variável resource.
-                                                    </p>
-                                                </footer>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="tab-pane fade" id="nav-null" role="tabpanel" aria-labelledby="nav-null-tab">
-                                    <div class="col-xl-12 col-md-6 pt-3">
-                                        <div class="card">
-                                            <div class="card-header">
-                                                <h2>Null</h2>
-                                                <p>É uma variável especial que tem armazenado o valor NULL.</p>
-
-                                            </div>
-                                            <div class="card-body">
-
-                                                <div class="alert alert-secondary">
-                                                    Segue abaixo variável do tipo NULL.
-                                                </div>
-
-                                                <div class="alert alert-success justify-content-center">
-                                                    <p>Ex¹:</p><br>
-                                                    <a class="btn btn-outline-success text-left" href="#">
-                                                        &lt;?php<br>
-                                                        $my_var = NULL;
-                                                        ?><br>
-                                                    </a>
-                                                </div>
-                                                <footer class="bg-secondary card-footer">
-                                                    <p class="font-italic">¹ Este é apenas um exemplo das diversas formas
-                                                        de se criar uma variável Null.
-                                                    </p>
-                                                </footer>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
                     </div>
 
