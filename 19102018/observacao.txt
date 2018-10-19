@@ -1,0 +1,1 @@
+Aula sobre comandos sql: insert, select, update, delete, where, order by etc.
